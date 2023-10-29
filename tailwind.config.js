@@ -18,6 +18,12 @@ module.exports = {
         dark_grayish_blue: "hsl(240, 6%, 50%)",
         // dividers
         light_grayish_blue: "hsl(240, 5%, 91%)",
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
       }
     },
   },
