@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body class="font-kumbh_sans">
+  <main class="min-h-screen bg-gradient-to-t from-soft_blue to-soft_violet grid place-items-center lg:pt-12 pt-64 lg:pb-12 pb-40 lg:pl-0 lg:pr-0 p-8 pr-8">
+    <section class="lg:max-w-[920px] max-w-[500px] lg:max-h-[520px] min-h-fit bg-white grid lg:grid-cols-2 h-full w-full items-center rounded-[2rem] shadow-2xl relative">
+      <!-- desktop illustration image -->
+      <div class="relative h-full lg:block hidden">
+        <div class="relative grid items-center w-full overflow-hidden h-full">
+          <img class="relative -left-[75px]" src="images/illustration-woman-online-desktop.svg" alt="">
+          <img class="absolute top-[70px] -left-[90px]" src="images/bg-pattern-desktop.svg" alt="">
+        </div>
+        <img class="absolute z-30 left-[-95px] top-[215px]" src="images/illustration-box-desktop.svg" alt="">
+      </div>
+      <!-- desktop illustration image -->
+      <div class="lg:hidden absolute justify-self-center h-[250px] top-[-140px] rotate-[-1deg] w-[75%] grid">
+        <img class="absolute w-full top-[150px]" src="images/bg-pattern-mobile.svg" alt="">
+        <img class="absolute h-full w-full" src="images/illustration-woman-online-mobile.svg" alt="">
+      </div>
+
+      <div class="grid h-full content-center gap-16 pt-52 lg:pl-0 pl-6 lg:pr-0 pr-6 lg:pb-0 lg:pt-0 pb-12">
+        <h1 class="text-5xl font-bold text-very_dark_desaturated_blue text-center lg:text-left">FAQ</h1>
+        <ul class="grid gap-6 h-fit">
+          <li class="accordion_button lg:max-w-[350px] cursor-pointer group h-fit border-b-[1px] pb-6">
+            <div class="flex justify-between items-center">
+              <button class="text-very_dark_grayish_blue text-xl group-hover:text-soft_red transition-colors">How many team members can I invite?</button>
+              <img class="transition-transform" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="accordion_content text-dark_grayish_blue h-0 scale-0 opacity-0 transition-all pt-2">
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </p>
+          </li>
+          <li class="accordion_button lg:max-w-[350px] cursor-pointer group h-fit border-b-[1px] pb-6">
+            <div class="flex justify-between items-center">
+              <button class="text-very_dark_grayish_blue text-xl group-hover:text-soft_red transition-colors">What is the maximum file upload size?</button>
+              <img class="transition-transform" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="accordion_content text-dark_grayish_blue h-0 scale-0 opacity-0 transition-all pt-2">No more than 2GB. All files in your account must fit your allotted storage space</p>
+          </li>
+          <li class="accordion_button lg:max-w-[350px] cursor-pointer group h-fit border-b-[1px] pb-6">
+            <div class="flex justify-between items-center">
+              <button class="text-very_dark_grayish_blue text-xl group-hover:text-soft_red transition-colors">How do I reset my password?</button>
+              <img class="transition-transform" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="accordion_content text-dark_grayish_blue h-0 scale-0 opacity-0 transition-all pt-2">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </li>
+          <li class="accordion_button lg:max-w-[350px] cursor-pointer group h-fit border-b-[1px] pb-6">
+            <div class="flex justify-between items-center">
+              <button class="text-very_dark_grayish_blue text-xl group-hover:text-soft_red transition-colors">Can I cancel my subscription?</button>
+              <img class="transition-transform" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="accordion_content text-dark_grayish_blue h-0 scale-0 opacity-0 transition-all pt-2">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </li>
+          <li class="accordion_button lg:max-w-[350px] cursor-pointer group h-fit border-b-[1px] pb-6">
+            <div class="flex justify-between items-center">
+              <button class="text-very_dark_grayish_blue text-xl group-hover:text-soft_red transition-colors">Do you provide additional support?</button>
+              <img class="transition-transform" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="accordion_content text-dark_grayish_blue h-0 scale-0 opacity-0 transition-all pt-2">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </li>
+        </ul>        
+      </div>
+    </section>
+  </main>
+</body>
+</html>
